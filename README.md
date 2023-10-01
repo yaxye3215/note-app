@@ -1,8 +1,9 @@
 <h2>Note App</h2>
 
 <div align="center">
-  <img src="https://i.postimg.cc/tgPQS7H4/home-Screen.jpg" alt="Screenshot 1" width="250">
-  <img src="https://i.postimg.cc/kgTqzJ4W/Jepretan-Layar-2023-06-16-pukul-21-38-15.png" alt="Screenshot 1" width="250">
+  <img src="https://i.postimg.cc/tgPQS7H4/home-Screen.jpg" alt="homeScreen" width="250">
+  <img src="https://i.postimg.cc/3JJksQNT/details-Screen.jpg" alt="detailsScreen" width="250">
+  <img src="https://i.postimg.cc/vHcQ7YDc/add-Screen.jpg" alt="addScreen" width="250">
 </div>
 
 
