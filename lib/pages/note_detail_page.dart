@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:intl/intl.dart';
 import 'package:note_app/database/note_database.dart';
 import 'package:note_app/model/note.dart';
@@ -48,7 +46,8 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
                 child: CircularProgressIndicator(),
               )
             : ListView(
-                padding: const EdgeInsets.all(8),
+                padding:
+                    const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 children: [
                   Text(
                     note.title,
@@ -60,9 +59,20 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
                   const SizedBox(
                     height: 8,
                   ),
-                  Text(
-                    DateFormat.yMMMd().format(note.createdTime),
-                    style: const TextStyle(color: Colors.white38),
+                  Row(
+                    children: [
+                      Text(
+                        DateFormat.Hms().format(note.createdTime),
+                        style: const TextStyle(color: Colors.white38),
+                      ),
+                      const SizedBox(
+                        width: 5,
+                      ),
+                      Text(
+                        DateFormat.yMMMd().format(note.createdTime),
+                        style: const TextStyle(color: Colors.white38),
+                      ),
+                    ],
                   ),
                   const SizedBox(
                     height: 8,

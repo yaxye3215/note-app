@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:note_app/database/note_database.dart';
 import 'package:note_app/pages/note_detail_page.dart';
@@ -49,7 +47,7 @@ class _NotePageState extends State<NotePage> {
             ? const CircularProgressIndicator()
             : notes.isEmpty
                 ? const Text(
-                    "kosong",
+                    "xasuus qor maku qorno",
                     style: TextStyle(color: Colors.white, fontSize: 24),
                   )
                 : buildNotesView(),
@@ -57,7 +55,7 @@ class _NotePageState extends State<NotePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: () async {
           final route =
-              MaterialPageRoute(builder: (context) => AddEditNotePage());
+              MaterialPageRoute(builder: (context) => const AddEditNotePage());
           await Navigator.push(context, route);
           refreshNotes();
         },

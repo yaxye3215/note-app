@@ -1,6 +1,5 @@
+//ignore: file_names
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class NoteFormWidget extends StatelessWidget {
   final bool isImportant;
@@ -63,10 +62,16 @@ class NoteFormWidget extends StatelessWidget {
         fontWeight: FontWeight.bold,
         fontSize: 24,
       ),
-      decoration: const InputDecoration(
-          border: InputBorder.none,
+      decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderSide: const BorderSide(width: 3, color: Colors.white30),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          focusedBorder: OutlineInputBorder(
+              borderSide: const BorderSide(width: 1, color: Colors.white30),
+              borderRadius: BorderRadius.circular(20)),
           hintText: "Title",
-          hintStyle: TextStyle(color: Colors.white70)),
+          hintStyle: const TextStyle(color: Colors.white70)),
       validator: (title) {
         return title != null && title.isEmpty
             ? 'The title cannot be empty'
@@ -78,17 +83,23 @@ class NoteFormWidget extends StatelessWidget {
 
   Widget buildDescriptionField() {
     return TextFormField(
-      maxLines: 5,
+      maxLines: 10,
       initialValue: description,
       style: const TextStyle(
         color: Colors.white70,
         fontWeight: FontWeight.bold,
         fontSize: 24,
       ),
-      decoration: const InputDecoration(
-          border: InputBorder.none,
-          hintText: "Type something...",
-          hintStyle: TextStyle(color: Colors.white70)),
+      decoration: InputDecoration(
+          border: OutlineInputBorder(
+            borderSide: const BorderSide(width: 3, color: Colors.white30),
+            borderRadius: BorderRadius.circular(20),
+          ),
+          focusedBorder: OutlineInputBorder(
+              borderSide: const BorderSide(width: 1, color: Colors.white30),
+              borderRadius: BorderRadius.circular(20)),
+          hintText: "Type...",
+          hintStyle: const TextStyle(color: Colors.white70)),
       validator: (description) {
         return description != null && description.isEmpty
             ? 'The description cannot be empty'

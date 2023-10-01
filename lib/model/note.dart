@@ -20,7 +20,7 @@ class Note {
   final DateTime createdTime;
 
   Note(
-      { this.id,
+      {this.id,
       required this.isImportant,
       required this.number,
       required this.title,

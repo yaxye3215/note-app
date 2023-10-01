@@ -25,20 +25,23 @@ class NoteCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     /// Pick colors from the accent colors based on index
     final color = _lightColors[index % _lightColors.length];
-    final time = DateFormat.yMMMd().format(note.createdTime);
+    final time2 = DateFormat.yMMMd().format(note.createdTime);
+    final time1 = DateFormat.Hms().format(note.createdTime);
     final minHeight = getMinHeight(index);
 
     return Card(
       color: color,
       child: Container(
-        constraints: BoxConstraints(minHeight: minHeight),
+        constraints: BoxConstraints(
+          minHeight: minHeight,
+        ),
         padding: const EdgeInsets.all(8),
         child: Column(
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              time,
+              "$time2 at $time1",
               style: TextStyle(color: Colors.grey.shade700),
             ),
             const SizedBox(height: 4),

@@ -1,10 +1,11 @@
 //Konfigurasi untuk database sqlite nya
 import 'dart:async';
 
-import 'package:note_app/model/note.dart';
-import 'package:sqflite/sqflite.dart';
-import 'package:sqflite/sqlite_api.dart';
+// ignore: depend_on_referenced_packages
 import 'package:path/path.dart';
+import 'package:sqflite/sqflite.dart';
+
+import 'package:note_app/model/note.dart';
 
 class NoteDatabase {
   static final NoteDatabase instance = NoteDatabase._init();
