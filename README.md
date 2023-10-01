@@ -10,5 +10,5 @@
 
 
 ## Instagram
-Check out our Instagram page [here](https://www.instagram.com/p/CtjhIVQhPDl/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA==). 📸
+Instagram page [here](https://www.instagram.com/yaxye__ataa/). 
 
