@@ -1,4 +1,4 @@
-# NotesApp
+<h2>Note App</h2>
 
 <div align="center">
   <img src="https://i.postimg.cc/KcTcjhqy/Jepretan-Layar-2023-06-16-pukul-21-38-06.png" alt="Screenshot 1" width="250">
